@@ -192,34 +192,7 @@ document.addEventListener("DOMContentLoaded", () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
     });
 
-    // 5. REAL GLOBAL VISITOR COUNTER API
-    const counterDisplay = document.getElementById("counterDisplay");
-    if (counterDisplay) {
-        const namespace = "abdullah-mohamed-portfolio-2026";
-        const key = "global-site-visits";
-        
-        fetch(`https://api.counterapi.dev/v1/${namespace}/${key}/up`)
-            .then(response => response.json())
-            .then(data => {
-                const globalVisits = data.count; 
-                let currentDisplayCount = 0;
-                const increment = Math.max(1, Math.floor(globalVisits / 30)); 
-                
-                const timer = setInterval(() => {
-                    currentDisplayCount += increment;
-                    if (currentDisplayCount >= globalVisits) {
-                        clearInterval(timer);
-                        counterDisplay.innerText = globalVisits.toString().padStart(4, '0');
-                    } else {
-                        counterDisplay.innerText = currentDisplayCount.toString().padStart(4, '0');
-                    }
-                }, 40); 
-            })
-            .catch(error => {
-                console.error("Counter API failed, displaying default.", error);
-                counterDisplay.innerText = "0001";
-            });
-    }
+    
 
     // 6. MASTER SLIDER LOGIC (DRAG TO SCROLL + ARROWS ONLY)
     const sliderWrappers = document.querySelectorAll('.slider-wrapper');
@@ -426,3 +399,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 });
+
