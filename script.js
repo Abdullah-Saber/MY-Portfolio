@@ -371,53 +371,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // 9. Fully Functioning Formspree Submission 
-    const form = document.getElementById('gigForm');
-    if(form) {
-        form.addEventListener('submit', async (e) => {
-            
-            if (window.location.protocol === 'file:') {
-                return; 
-            }
-            
-            e.preventDefault(); 
-            
-            const btn = form.querySelector('button');
-            const originalText = btn.innerText;
-            btn.innerText = "Transmitting...";
-            
-            const data = new FormData(form);
-            
-            try {
-                const response = await fetch(form.action, {
-                    method: form.method,
-                    body: data,
-                    headers: {
-                        'Accept': 'application/json'
-                    }
-                });
-                
-                if (response.ok) {
-                    btn.innerText = "Data Transmitted Successfully!";
-                    btn.style.backgroundColor = "var(--accent)"; 
-                    btn.style.color = "#000";
-                    form.reset();
-                } else {
-                    btn.innerText = "Error: Transmission Failed";
-                    btn.style.backgroundColor = "#e74c3c";
-                }
-            } catch (error) {
-                btn.innerText = "Error: Network Issue";
-                btn.style.backgroundColor = "#e74c3c";
-            }
-            
-            setTimeout(() => {
-                btn.innerText = originalText;
-                btn.style.backgroundColor = "var(--primary)";
-                btn.style.color = "#000";
-            }, 3000);
-        });
-    }
+   
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -469,5 +423,6 @@ document.addEventListener("DOMContentLoaded", function () {
             closeLightbox();
         }
     });
+
 
 });
