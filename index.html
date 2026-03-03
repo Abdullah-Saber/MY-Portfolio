@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Abdullah Mohamed | Software Engineer</title>
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230B1120'/><text x='50%25' y='54%25' dominant-baseline='central' text-anchor='middle' fill='%2338BDF8' font-family='system-ui, sans-serif' font-weight='900' font-size='48'>AM</text></svg>" type="image/svg+xml">
+
+    <meta property="og:title" content="Abdullah Mohamed | Software Engineer">
+    <meta property="og:description" content="Architecting scalable .NET software and crafting immersive VR realities.">
+    <meta property="og:image" content="assets/Personal-Photo.jpg"> 
+    <meta property="og:url" content="https://your-domain.com">
+    <meta property="og:type" content="website">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    
+</head>
+<body>
+
+    <div class="noise-overlay"></div>
+
+    <div class="scroll-progress-bar" id="scrollProgress"></div>
+    <div class="custom-cursor-dot" id="cursorDot"></div>
+    <div class="custom-cursor-outline" id="cursorOutline"></div>
+
+    <div class="glow-blob blob-1"></div>
+    <div class="glow-blob blob-2"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo glitch" data-text="Abdullah Mohamed.">Abdullah Mohamed.</a>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li> 
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#github-stats">GitHub Pulse</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero section">
+        <div class="container hero-container">
+            <div class="hero-text">
+                <p class="subtitle fade-up">Computer Science Student | GPA: 3.6</p>
+                <h2 class="dynamic-role fade-up"><span class="typewriter-text"></span><span class="cursor"></span></h2>
+                
+                <h1 class="title fade-up gradient-text">Architecting scalable .NET software and crafting immersive VR realities.</h1>
+                
+                <p class="description stagger-text">
+                    I am a software engineer who thrives at the intersection of robust enterprise logic and interactive 3D design. Whether I am building secure, full-stack .NET web applications or engineering high-fidelity VR environments and digital twins using Unity and Blender, my objective is the same: to deliver seamless, high-performance systems from the database layer to the final rendered frame.
+                </p>
+                
+                <div class="btn-group fade-up">
+                    <a href="#portfolio" class="btn btn-primary">Explore The Vault</a>
+                    <a href="#contact" class="btn btn-secondary">Hire Me</a>
+                    <a href="CV-AbdullahMohamed.pdf" target="_blank" class="btn btn-outline"><i class="fa-solid fa-file-pdf"></i> Download CV</a>
+                </div>
+            </div>
+            <div class="hero-visual fade-up">
+                <div class="profile-photo-container floating glow-border">
+                    <img src="assets/Personal Photo.jpg" loading="lazy" alt="Abdullah Mohamed" class="profile-photo">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="skills" class="section bg-panel">
+        <div class="container">
+            <h2 class="section-title fade-up">Technical Arsenal</h2>
+            <div class="skills-wrapper fade-up">
+                <div class="skill-category">
+                    <h3>Programming & Web</h3>
+                    <div class="badges">
+                        <span class="badge">C#</span><span class="badge">Python</span><span class="badge">SQL</span>
+                        <span class="badge">HTML</span><span class="badge">CSS</span><span class="badge">JavaScript</span><span class="badge">Bootstrap</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameworks & Tools</h3>
+                    <div class="badges">
+                        <span class="badge">ASP.NET Core</span><span class="badge">.NET MVC</span><span class="badge">Entity Framework</span>
+                        <span class="badge">React</span><span class="badge">Git</span><span class="badge">GitHub</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>3D & Interactive</h3>
+                    <div class="badges">
+                        <span class="badge badge-accent">Unity 3D</span><span class="badge badge-accent">Blender</span>
+                        <span class="badge badge-accent">VR Development</span><span class="badge badge-accent">Computer Vision</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title fade-up">Professional Experience</h2>
+            <div class="timeline fade-up">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content spotlight-card">
+                        <div class="spotlight-content">
+                            <h3>Trainee at Digital Egypt Pioneers Initiative - DEPI (Fullstack .NET)</h3>
+                            <h4>DEPI (Fullstack .NET) | Oct 2025 - Present</h4>
+                            <p>6-month training as Fullstack trainee in .NET core, covering SQL Server, C#, Entity Framework, and ASP.NET MVC, beside mastering Frontend Technologies.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content spotlight-card">
+                        <div class="spotlight-content">
+                            <h3>Trainee Summer Code Camp (.NET)</h3>
+                            <h4>Information Technology Institute (ITI) | Aug 2025 - Sep 2025</h4>
+                            <p>Intensive 120-hour training in Web Development with .NET, covering SQL Server, C#, Entity Framework, and ASP.NET MVC.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content spotlight-card">
+                        <div class="spotlight-content">
+                            <h3>Accessibility Solutions Intern</h3>
+                            <h4>NAID | Jul 2025 - Sep 2025</h4>
+                            <p>Co-developed "Smart Bridge," an assistive technology prototype for deaf-blind individuals featuring real-time sign recognition.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content spotlight-card">
+                        <div class="spotlight-content">
+                            <h3>Freelancing Program Trainee</h3>
+                            <h4>ITIDA GIGs (EYouth) | Jan 2025 - May 2025</h4>
+                            <p>Completed professional training covering profile setup, proposal writing, portfolio building, and client communication.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content spotlight-card">
+                        <div class="spotlight-content">
+                            <h3>Technical Member</h3>
+                            <h4>IEEE NU Student Branch | Sep 2022 - May 2023</h4>
+                            <p>Organized highly-attended workshops on AI and Software Engineering, contributed to engineering projects, and fostered technical education within the community.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section bg-panel">
+        <div class="container">
+            <h2 class="section-title fade-up">Selected Works</h2>
+            <div class="portfolio-filter fade-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="software">Software & Web</button>
+                <button class="filter-btn" data-filter="interactive">3D & Unity</button>
+            </div>
+            
+            <div class="slider-wrapper fade-up">
+                <button class="slider-arrow left-arrow" aria-label="Previous Project"><i class="fa-solid fa-chevron-left"></i></button>
+                <div class="slider-track" id="portfolio-slider">
+                    
+                    <div class="portfolio-card slider-item interactive-card spotlight-card" data-category="interactive" data-gallery="assets/NUverse (1).png,assets/NUverse (2).png">
+                        <div class="spotlight-content">
+                            <div class="card-img-wrapper"><img src="assets/NUverse (1).png" loading="lazy" alt="NUVerse VR"><div class="overlay-indicator"><i class="fa-solid fa-images"></i> View Gallery</div></div>
+                            <div class="card-body">
+                                <h3>NUVerse (VR Twin)</h3>
+                                <p>An immersive virtual reality digital twin of the Nile University campus.</p>
+                                <div class="card-tags"><span>Unity</span><span>Blender</span><span>C#</span></div>
+                                <div class="card-links">
+                                    <a href="https://youtu.be/cKqt6F2GEJs"target="_blank" class="project-link" onclick="event.stopPropagation();"><i class="fa-solid fa-video"></i> Watch Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card slider-item interactive-card spotlight-card" data-category="software" data-gallery="assets/E_learn (1).png,assets/E_learn (2).png,assets/E_learn (3).png,assets/E_learn (4).png,assets/E_learn (5).png,assets/E_learn (6).png,assets/E_learn (7).png,assets/E_learn (8).png,assets/E_learn (9).png,assets/E_learn (10).png">
+                        <div class="spotlight-content">
+                            <div class="card-img-wrapper"><img src="assets/E_learn (1).png" loading="lazy" alt="Seen vs Unseen Game Jam"><div class="overlay-indicator"><i class="fa-solid fa-images"></i> View Gallery</div></div>
+                            <div class="card-body">
+                                <h3>E-learning Platform </h3>
+                                <p>E-Learning Platform for interactive and engaging learning experiences that serve Disabled.</p>
+                                <div class="card-tags"><span>HTML/CSS</span><span>React</span><span>Django</span></div>
+                                <div class="card-links">
+                                    <a href="https://github.com/samerelhossany/Educational-system-for-disabled-" target="_blank" class="project-link" onclick="event.stopPropagation();"><i class="fa-brands fa-github"></i>Github Repo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card slider-item interactive-card spotlight-card" data-category="software" data-gallery="assets/Stemmy (1).png,assets/Stemmy (2).png">
+                        <div class="spotlight-content">
+                            <div class="card-img-wrapper"><img src="assets/stemmy.png" loading="lazy" alt="STEMMY"><div class="overlay-indicator"><i class="fa-solid fa-images"></i> View Gallery</div></div>
+                            <div class="card-body">
+                                <h3>STEMMY AI Tutor</h3>
+                                <p>AI/Machine Learning platform to simplify STEM subjects.</p>
+                                <div class="card-tags"><span>React</span><span>FastAPI</span><span>PyTorch</span><span>HTML/CSS</span><span>JS</span></div>
+                                <div class="card-links">
+                                    <a href="https://github.com/Abdullah-Saber/Machine-Project" target="_blank" class="project-link" onclick="event.stopPropagation();"><i class="fa-brands fa-github"></i>Github Repo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card slider-item interactive-card spotlight-card" data-category="software" data-gallery="assets/Novi (1).png,assets/Novi (2).png,assets/Novi (3).png,assets/Novi (4).png">
+                        <div class="spotlight-content">
+                            <div class="card-img-wrapper"><img src="assets/Novi (2).png" loading="lazy" alt="Novi Frontend"><div class="overlay-indicator"><i class="fa-solid fa-images"></i> View Gallery</div></div>
+                            <div class="card-body">
+                                <h3>Novi E-Commerce</h3>
+                                <p>Responsive frontend built for a clothing trading startup.</p>
+                                <div class="card-tags"><span>HTML/CSS</span><span>JS</span><span>React</span></div>
+                                <div class="card-links">
+                                    <a href="https://github.com/Abdullah-Saber/Novi-Frontend" target="_blank" class="project-link" onclick="event.stopPropagation();"><i class="fa-brands fa-github"></i> Github Repo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card slider-item interactive-card spotlight-card" data-category="software" data-gallery="assets/Library System (1).png,assets/Library System (2).png,assets/Library System (3).png,assets/Library System (4).png,assets/Library System (5).png,assets/Library System (6).png,assets/Library System (7).png,assets/Library System (8).png,assets/Library System (9).png,assets/Library System (10).png">
+                        <div class="spotlight-content">
+                            <div class="card-img-wrapper"><img src="assets/Library System (1).png" loading="lazy" alt="Novi Frontend"><div class="overlay-indicator"><i class="fa-solid fa-images"></i> View Gallery</div></div>
+                            <div class="card-body">
+                                <h3>Library Management System</h3>
+                                <p>Simple desktop application for managing a library's inventory and circulation.</p>
+                                <div class="card-tags"><span>C#</span><span>ASP .Net</span><span>Entity Framework</span><span>HTML/CSS</span><span>JS</span></div>
+                                <div class="card-links">
+                                    <a href="https://github.com/Abdullah-Saber/Library-Management-System" target="_blank" class="project-link" onclick="event.stopPropagation();"><i class="fa-brands fa-github"></i> Github Repo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="slider-arrow right-arrow" aria-label="Next Project"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title fade-up">Freelance Services</h2>
+            <div class="slider-wrapper fade-up">
+                <button class="slider-arrow left-arrow" aria-label="Previous Service"><i class="fa-solid fa-chevron-left"></i></button>
+                <div class="slider-track">
+                    
+                    <div class="service-card slider-item spotlight-card">
+                        <div class="spotlight-content">
+                            <i class="fa-solid fa-laptop-code service-icon"></i>
+                            <h3>Frontend Development</h3>
+                            <p>I build responsive, dynamic, and pixel-perfect web interfaces using HTML, CSS, JavaScript, and modern frameworks like React.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card slider-item spotlight-card">
+                        <div class="spotlight-content">
+                            <i class="fa-solid fa-server service-icon"></i>
+                            <h3>Backend & Web APIs</h3>
+                            <p>I architect robust, scalable infrastructure, secure REST APIs, and relational databases using ASP.NET Core and SQL Server.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card slider-item spotlight-card">
+                        <div class="spotlight-content">
+                            <i class="fa-solid fa-cube service-icon"></i>
+                            <h3>3D Asset Creation</h3>
+                            <p>I specialize in creating highly optimized architectural models, game environments, and interactive digital twins using Blender.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card slider-item spotlight-card">
+                        <div class="spotlight-content">
+                            <i class="fa-solid fa-vr-cardboard service-icon"></i>
+                            <h3>Interactive Experiences</h3>
+                            <p>I engineer high-fidelity virtual reality prototypes, 3D simulations, and serious games leveraging the power of Unity and C#.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="slider-arrow right-arrow" aria-label="Next Service"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="section bg-panel">
+        <div class="container">
+            <h2 class="section-title fade-up">Honors & Achievements</h2>
+            <div class="slider-wrapper fade-up">
+                <button class="slider-arrow left-arrow" aria-label="Previous Achievement"><i class="fa-solid fa-chevron-left"></i></button>
+                <div class="slider-track">
+                    
+                    <div class="achievement-card slider-item interactive-card spotlight-card" data-gallery="nasa-cover.webp">
+                        <div class="spotlight-content" style="height: 100%; display: flex; flex-direction: column;">
+                            <div class="achievement-icon"><i class="fa-solid fa-satellite"></i></div>
+                            <h3>NASA Space Apps Hackathon</h3>
+                            <p class="achievement-date">Sep 2025</p>
+                            <p>Participated in the "Will It Rain on My Parade?" challenge, building a robust C# backend for a data-driven weather application.</p>
+                            <span class="gallery-hint"><i class="fa-regular fa-image"></i> Tap to View</span>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card slider-item interactive-card spotlight-card" data-gallery="award-ugrf1.webp">
+                        <div class="spotlight-content" style="height: 100%; display: flex; flex-direction: column;">
+                            <div class="achievement-icon"><i class="fa-solid fa-medal"></i></div>
+                            <h3>2nd Place - UGRF Forum</h3>
+                            <p class="achievement-date">Feb 2024</p>
+                            <p>Designed and implemented a secure and efficient image encryption tool using advanced linear algebra techniques.</p>
+                            <span class="gallery-hint"><i class="fa-regular fa-image"></i> Tap for Gallery</span>
+                        </div>
+                    </div>
+                    
+                    <div class="achievement-card slider-item interactive-card spotlight-card" data-gallery="scholarship-proof.webp">
+                        <div class="spotlight-content" style="height: 100%; display: flex; flex-direction: column;">
+                            <div class="achievement-icon"><i class="fa-solid fa-award"></i></div>
+                            <h3>ITCS Partial Scholarship</h3>
+                            <p class="achievement-date">2022 - 2025</p>
+                            <p>Awarded and continuously maintained a merit-based partial scholarship from Nile University's ITCS School.</p>
+                            <span class="gallery-hint"><i class="fa-regular fa-image"></i> Tap for Proof</span>
+                        </div>
+                    </div>
+                    
+                    <div class="achievement-card slider-item interactive-card spotlight-card" data-gallery="ugrf20.webp">
+                        <div class="spotlight-content" style="height: 100%; display: flex; flex-direction: column;">
+                            <div class="achievement-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                            <h3>UGRF Forum (20th Edition)</h3>
+                            <p class="achievement-date">Aug 2025</p>
+                            <p>Selected to participate and formally present the STEM AI Tutor Platform (Stemmy) project to industry professionals.</p>
+                            <span class="gallery-hint"><i class="fa-regular fa-image"></i> Tap for Photos</span>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="slider-arrow right-arrow" aria-label="Next Achievement"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="github-stats" class="section">
+        <div class="container">
+            <h2 class="section-title fade-up">GitHub Live Pulse</h2>
+            <p class="text-center" style="color: var(--text-muted); margin-bottom: 48px; max-width: 800px; margin-left: auto; margin-right: auto; text-align: center; font-size: 1.25rem;">
+                Real-time view of my open-source activity, consistent contributions, and coding momentum.
+            </p>
+
+            <div class="github-stats-container fade-up" style="display: flex; flex-direction: column; align-items: center; gap: 40px;">
+                
+                <div class="spotlight-card interactive-card github-stat-card" style="width: 100%; max-width: 550px;">
+                    <div class="spotlight-content" style="padding: 24px; display: flex; justify-content: center; width: 100%;">
+                        <img 
+                            src="https://github-readme-streak-stats.herokuapp.com/?user=Abdullah-Saber&theme=transparent&hide_border=true&title_color=38BDF8&text_color=F8FAFC&sideNums=F8FAFC&sideLabels=94A3B8&ring=38BDF8&fire=2DD4BF&currStreakLabel=38BDF8&currStreakNum=F8FAFC" 
+                            alt="GitHub Streak" 
+                            loading="lazy"
+                            style="width: 100%; filter: drop-shadow(0 0 10px rgba(56, 189, 248, 0.1));"
+                        >
+                    </div>
+                </div>
+
+                <div class="spotlight-card interactive-card github-stat-card" style="width: 100%; max-width: 900px;">
+                    <div class="spotlight-content" style="padding: 40px 30px; border-radius: 12px; width: 100%; text-align: center;">
+                        <h3 style="color: var(--primary); font-size: 1.4rem; margin-bottom: 24px; font-weight: 700; letter-spacing: 1px;">Contribution Calendar</h3>
+                        <img 
+                            src="https://ghchart.rshah.org/38BDF8/Abdullah-Saber" 
+                            alt="Abdullah's Contribution Graph" 
+                            loading="lazy"
+                            style="width: 100%; filter: drop-shadow(0 0 15px rgba(56, 189, 248, 0.2));"
+                        >
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5 fade-up" style="text-align: center; margin-top: 50px;">
+                <a href="https://github.com/Abdullah-Saber" target="_blank" class="btn btn-primary" style="display: inline-block;">
+                    <i class="fa-brands fa-github"></i> View Full GitHub Profile
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificates" class="section bg-panel">
+        <div class="container">
+            <h2 class="section-title fade-up">Licenses & Certifications</h2>
+            <div class="slider-wrapper fade-up">
+                <div class="slider-track" style="justify-content: center;">
+                    <div class="cert-card slider-item spotlight-card" style="max-width: 450px;">
+                        <div class="spotlight-content">
+                            <div class="cert-img"><img src="assets/ITI-Certificate.png" loading="lazy" alt="ITI Certificate"></div>
+                            <div class="cert-info">
+                                <h3>.NET Core Summer Camp</h3>
+                                <p class="cert-issuer">ITI</p>
+                                <p class="cert-desc">120-hour program in enterprise web development.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cert-card slider-item spotlight-card" style="max-width: 450px;">
+                        <div class="spotlight-content">
+                            <div class="cert-img"><img src="assets/ITIDA GIGS.jpg" loading="lazy" alt="Freelance Certificate"></div>
+                            <div class="cert-info">
+                                <h3>Professional Freelancing</h3>
+                                <p class="cert-issuer">ITIDA & EYouth</p>
+                                <p class="cert-desc">Training in digital economy career building.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card slider-item spotlight-card" style="max-width: 450px;">
+                        <div class="spotlight-content">
+                            <div class="cert-img"><img src="assets/DIGITOPIA-2nd Phase.png" loading="lazy" alt="Freelance Certificate"></div>
+                            <div class="cert-info">
+                                <h3>DIGITOPIA </h3>
+                                <p class="cert-issuer">DIGITOPIA Hackathon 2025</p>
+                                <p class="cert-desc">annual hackathon aimed at nurturing innovation and discovering exceptional tech talent in Egypt.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card slider-item spotlight-card" style="max-width: 450px;">
+                        <div class="spotlight-content">
+                            <div class="cert-img"><img src="assets/NASA appspace.png" loading="lazy" alt="Freelance Certificate"></div>
+                            <div class="cert-info">
+                                <h3>NASA Space App </h3>
+                                <p class="cert-issuer">NASA Space Cairo Hackathon-2025</p>
+                                <p class="cert-desc">the annual NASA Space Apps Challenge.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card slider-item spotlight-card" style="max-width: 450px;">
+                        <div class="spotlight-content">
+                            <div class="cert-img"><img src="assets/My certificate_UGRF19th.jpg" loading="lazy" alt="Freelance Certificate"></div>
+                            <div class="cert-info">
+                                <h3>UGRF 19th</h3>
+                                <p class="cert-issuer">Undergraduate Research Forum 19th Edition</p>
+                                <p class="cert-desc">semi-annual research forum for the undergraduate students</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card slider-item spotlight-card" style="max-width: 450px;">
+                        <div class="spotlight-content">
+                            <div class="cert-img"><img src="assets/UGRF20th.png" loading="lazy" alt="Freelance Certificate"></div>
+                            <div class="cert-info">
+                                <h3>UGRF 20th </h3>
+                                <p class="cert-issuer">Undergraduate Research Forum 20th Edition</p>
+                                <p class="cert-desc">20th Undergraduate Research Forum:  First International Innovation Competition.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title fade-up">Initiate Contact</h2>
+            <div class="contact-wrapper fade-up">
+                <div class="contact-info">
+                    <h3 style="font-size: 2rem; margin-bottom: 15px;">Let's build something together.</h3>
+                    <p style="font-size: 1.2rem;">Open for freelance gigs, full-time roles, or exciting collaborative projects.</p>
+                    
+                    <h4 class="sub-heading mt-4" style="font-size: 1.2rem;">Hire me directly on:</h4>
+                    <div class="freelance-icons">
+                        <a href="https://khamsat.com/user/abdullah_saber_17" class="icon-link freelance-logo spotlight-card" aria-label="Khamsat"><div class="spotlight-content" style="padding:0; display:flex; justify-content:center; align-items:center; height:100%;"><img src="khamsat-logo.webp" loading="lazy" alt="Khamsat" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><span class="fallback-text" style="display:none; color:#38BDF8;">Kh</span></div></a>
+                        <a href="https://mostaql.com/u/Abdullah__17" class="icon-link freelance-logo spotlight-card" aria-label="Mostaql"><div class="spotlight-content" style="padding:0; display:flex; justify-content:center; align-items:center; height:100%;"><img src="mostaql-logo.webp" loading="lazy" alt="Mostaql" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><span class="fallback-text" style="display:none; color:#38BDF8;">Mo</span></div></a>
+                        <a href="https://kwork.com/user/abdullah-saber" class="icon-link freelance-logo spotlight-card" aria-label="Kwork"><div class="spotlight-content" style="padding:0; display:flex; justify-content:center; align-items:center; height:100%;"><img src="Kwork-logo.webp" loading="lazy" alt="Kwork" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><span class="fallback-text" style="display:none; color:#38BDF8;"><i class="fa-brands fa-neos"></i></span></div></a>
+                        <a href="https://www.elharefa.com/ar/freelancers/p/abdullah_saber" class="icon-link freelance-logo spotlight-card" aria-label="Elhareefa"><div class="spotlight-content" style="padding:0; display:flex; justify-content:center; align-items:center; height:100%;"><img src="elhareefa-logo.webp" loading="lazy" alt="Elhareefa" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><span class="fallback-text" style="display:none; color:#38BDF8;">El</span></div></a>
+                    </div>
+
+                    <h4 class="sub-heading mt-4" style="font-size: 1.2rem;">Or connect via:</h4>
+                    <div class="social-icons">
+                       <a href="https://mail.google.com/mail/?view=cm&fs=1&to=abdullahsaper2003@gmail.com&su=Freelance%20Inquiry%20from%20Portfolio" target="_blank" aria-label="Email" class="icon-link spotlight-card">
+    <div class="spotlight-content" style="padding:0; display:flex; justify-content:center; align-items:center; height:100%;">
+        <i class="fa-solid fa-envelope"></i>
+    </div>
+</a>
+                        <a href="https://linkedin.com/in/abdullah-mohamed-saber/" aria-label="LinkedIn" target="_blank" class="icon-link spotlight-card"><div class="spotlight-content" style="padding:0; display:flex; justify-content:center; align-items:center; height:100%;"><i class="fa-brands fa-linkedin-in"></i></div></a>
+                        <a href="https://github.com/Abdullah-Saber" aria-label="GitHub" target="_blank" class="icon-link spotlight-card"><div class="spotlight-content" style="padding:0; display:flex; justify-content:center; align-items:center; height:100%;"><i class="fa-brands fa-github"></i></div></a>
+                        <a href="https://abdullah-saber.itch.io/" target="_blank" aria-label="Itch.io" class="icon-link spotlight-card"><div class="spotlight-content" style="padding:0; display:flex; justify-content:center; align-items:center; height:100%;"><i class="fa-brands fa-itch-io"></i></div></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container spotlight-card" style="border-radius: 12px;">
+                    <div class="spotlight-content" style="padding: 40px; border-radius: 12px; background: rgba(23, 37, 84, 0.2);">
+                        <form id="gigForm" class="contact-form" style="border:none; padding:0; background:transparent;" action="https://formspree.io/f/mpqjbqoa" method="POST">
+                            <div class="form-group"><label style="font-size: 1rem;">Name</label><input type="text" name="name" required></div>
+                            <div class="form-group"><label style="font-size: 1rem;">Email</label><input type="email" name="email" required></div>
+                            <div class="form-group"><label style="font-size: 1rem;">Project Details</label><textarea name="message" required></textarea></div>
+                            <button type="submit" class="btn btn-primary btn-block">Send Transmission</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="visitor-stats">
+                <i class="fa-solid fa-eye"></i> Vault Visitors: <span id="counterDisplay" class="counter-glow">0000</span>
+            </div>
+            <p>&copy; <span id="currentYear">2026</span> Abdullah Mohamed. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" title="Take me up" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <div id="galleryModal" class="modal">
+        <span class="close-modal" aria-label="Close Gallery">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Gallery Image">
+            <button class="nav-btn prev-btn" aria-label="Previous Image"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="nav-btn next-btn" aria-label="Next Image"><i class="fa-solid fa-chevron-right"></i></button>
+            <div id="imageCounter" class="image-counter">1 / 3</div>
+        </div>
+    </div>
+
+
+<div class="image-lightbox" id="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="" alt="Certificate Preview">
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
